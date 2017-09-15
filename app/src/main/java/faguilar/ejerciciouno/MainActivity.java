@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         lblMensaje = (TextView) findViewById(R.id.lblMensaje);
         lblMensaje.setText("Hola Fernando !!");
 
+        //Con esto tenemos el control de la imagen
         imgImagen = (ImageView) findViewById(R.id.imgLogo);
     }
 }
