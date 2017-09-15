@@ -17,5 +17,6 @@ public class MainActivity extends AppCompatActivity {
         lblMensaje.setText("Hola Fernando !!");
 
         imgImagen = (ImageView) findViewById(R.id.imgLogo);
+
     }
 }
