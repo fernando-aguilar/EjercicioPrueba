@@ -20,18 +20,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btnLogin;
     private TextView lblMensaje;
 
-    //TextView lblMensaje;
-    //ImageView imgImagen;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //lblMensaje = (TextView) findViewById(R.id.lblMensaje);
-        //lblMensaje.setText("Hola Fernando !!");
-        //Con esto tenemos el control de la imagen
-        //imgImagen = (ImageView) findViewById(R.id.imgLogo);
 
         lyLogin = (LinearLayout) findViewById(R.id.lyLogin);
         txtEmail = (EditText) findViewById(R.id.txtEmail);
@@ -44,12 +36,13 @@ public class MainActivity extends AppCompatActivity {
                 String email = txtEmail.getText().toString();
                 String password = txtPassword.getText().toString();
 
-                if(email.equals(EMAIL_VALIDO) && password.equals(CONTRASEÑA_VALIDO)){
+                if (email.equals(EMAIL_VALIDO) && password.equals(CONTRASEÑA_VALIDO)) {
                     //Toast.makeText(getApplicationContext(), "Bienvenido", Toast.LENGTH_SHORT).show();
                     Toast.makeText(getApplicationContext(), getString(R.string.login_ok, email), Toast.LENGTH_SHORT).show();
                 } else {
-                    //Toast.makeText(getApplicationContext(), "Email o Paswword inválidos", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "Email o Password inválidos", Toast.LENGTH_SHORT).show();
                     Toast.makeText(getApplicationContext(), getString(R.string.login_error), Toast.LENGTH_SHORT).show();
+                    txtEmail.requestFocus();
                 }
             }
         });

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:id="@+id/lyLogin"
-tools:context="faguilar.ejerciciouno.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="faguilar.ejerciciouno.MainActivity">
 
     <EditText
         android:id="@+id/txtEmail"
@@ -16,9 +16,13 @@ tools:context="faguilar.ejerciciouno.MainActivity">
         android:layout_gravity="center_vertical|center_horizontal"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="100dp"
-        android:ems="10"
+        android:background="@android:color/background_light"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
+        android:paddingBottom="10dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
         android:text=""
         tools:layout_gravity="center" />
 
@@ -29,9 +33,13 @@ tools:context="faguilar.ejerciciouno.MainActivity">
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center"
         android:layout_marginBottom="20dp"
-        android:ems="10"
+        android:background="@android:color/background_light"
         android:hint="@string/password"
         android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
         android:text="" />
 
     <Button
@@ -40,13 +48,17 @@ tools:context="faguilar.ejerciciouno.MainActivity">
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center"
         android:layout_marginBottom="40dp"
+        android:background="?attr/colorButtonNormal"
+        android:textColor="@color/colorPrimaryDark"
         android:text="@string/login" />
+
 
     <TextView
         android:id="@+id/lblMensaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Not a menber? Sign up now."
-        android:gravity="center" />
+        android:textColor="@android:color/background_light" />
 
 </LinearLayout>
