@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">EjercicioUno</string>
-    <string name="app_default">Una cadena común</string>
+    <string name="app_name">Login window</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+    <string name="login_ok">Welcome: %s</string>
+    <string name="login_error">Email or  Passwor invalid</string>
 </resources>
